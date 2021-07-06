@@ -97,15 +97,28 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-color: rgb(65, 65, 65);
   height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
-  font-size: 1.25em;
   height: 100%;
+}
+
+#intro h1 {
+    font-family: 'Permanent Marker', cursive;
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: white;
+}
+
+#intro h2 {
+    font-family: 'Bona Nova', serif;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color:gold;
+    background-color: rgba(255, 174, 0, 0.349);
 }
 
 .wrapper {
@@ -115,17 +128,41 @@ body {
   justify-content: space-between;
 }
 
+.wrapper h3 {
+    font-family: 'Bona Nova', serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.wrapper p {
+    font-family: 'Bona Nova', serif;
+    font-size: 1em;
+    line-height: 2em;
+}
+
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
+  line-height: 1em;
+  font-size: 1em;
+  background-color: transparent;
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-flow: row wrap;
+  padding: 0 30px 0 30px;
+  box-sizing: border-box;
+}
+
+.div-2 {
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+}
+
+.emoji {
+    margin: 5px auto;
 }
 
 
