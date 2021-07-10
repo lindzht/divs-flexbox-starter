@@ -99,70 +99,68 @@ textarea {
 html {
   background-color: rgb(65, 65, 65);
   height: 100%;
+  width: 100%;
 }
 
 body {
+  color: white;
   padding: 2em;
-  height: 100%;
+  font-family: 'Bona Nova', serif;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
 }
 
-#intro h1 {
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    max-width: 1200px;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+header h1 {
     font-family: 'Permanent Marker', cursive;
     text-transform: capitalize;
     font-size: 3rem;
-    color: white;
+    color: gold;
 }
 
-#intro h2 {
-    font-family: 'Bona Nova', serif;
-    text-transform: capitalize;
-    font-size: 2.5rem;
-    color:gold;
-    background-color: rgba(255, 174, 0, 0.349);
-}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+  }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-}
-
-.wrapper h3 {
-    font-family: 'Bona Nova', serif;
+main p {
     font-size: 1.5rem;
-    color: white;
 }
 
-.wrapper p {
-    font-family: 'Bona Nova', serif;
-    font-size: 1em;
-    line-height: 2em;
-}
-
-.div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
-  line-height: 1em;
-  font-size: 1em;
-  background-color: transparent;
+.flex-items {
   display: flex;
-  width: 30%;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  flex-flow: row wrap;
-  padding: 0 30px 0 30px;
-  box-sizing: border-box;
+  width: 30%;
+  color: white;
+  padding: 20px 10px 20px 20px;
 }
 
-.div-2 {
-    border-left: solid 2px white;
-    border-right: solid 2px white;
+#div-2 {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
-.emoji {
-    margin: 5px auto;
+footer {
+    color: gold;
+    border-top: 1px solid #fff;
+    padding: 30px 0 0 0;
 }
 
 
